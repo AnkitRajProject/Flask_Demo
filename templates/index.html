@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Details</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Select Customer</h1>
+    <div class="container">
+        <label for="customer-select">Choose a customer:</label>
+        <select id="customer-select">
+            <option value="">Select a customer</option>
+        </select>
+        <div id="customer-details">
+            <!-- Customer details will be displayed here -->
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
